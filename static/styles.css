@@ -1,0 +1,94 @@
+/* This is a comment */
+
+/* Style for the body of the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0 20px;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+/* Navigation bar links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+/* Add underline on hover */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style article boxes */
+.entry {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+/* Buttons */
+button, input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Form labels */
+label {
+    font-weight: bold;
+}
+
+/* Form fields */
+input[type="url"],
+input[type="text"],
+textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.notes {
+    display: none;
+}

@@ -1,0 +1,8 @@
+CREATE TABLE entries (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    url TEXT NOT NULL,
+    title TEXT,
+    tags TEXT,
+    notes TEXT,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);

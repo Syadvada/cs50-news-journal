@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2>Article Details</h2>
+    <div class="entry">
+        <p><strong>Entry ID:</strong> {{ entry['id'] }}</p>
+        <h3><a href="{{ entry['url'] }}" target="_blank">{{ entry['title'] }}</a></h3>
+        <p><strong>Tags:</strong> {{ entry['tags'] }}</p>
+        <p><strong>Notes:</strong> {{ entry['notes'] }}</p>
+        <p><strong>Saved on:</strong> {{ entry['timestamp'] }}</p>
+    </div>
+{% endblock %}

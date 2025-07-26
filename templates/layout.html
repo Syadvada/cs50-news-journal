@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>📰 News Journal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>🗂️ My News Journal</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">🏠 Home</a> |
+            <a href="{{ url_for('add_article') }}">➕ Add Entry</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Child templates will inject their content here -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <hr>
+        <p style="text-align: center;">&copy; 2025 My Journal App</p>
+    </footer>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

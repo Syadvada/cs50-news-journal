@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2>Journal Entries</h2>
+    {% for entry in entries %}
+        <div class="entry">
+            <p><strong>Entry ID:</strong> {{ entry['id'] }} </p>
+            <h3><a href="{{ entry['url'] }}" target="_blank">{{ entry['title'] }}</a></h3>
+            <p><strong>Tags:</strong> {{ entry['tags'] }}</p>
+            <div class="notes-section">
+                <p class="notes"><strong>Notes:</strong> {{ entry['notes'] }}</p>
+                <button class="toggle-notes">Show/Hide Notes</button>
+            </div>
+            <p><strong>Saved on:</strong> {{ entry['timestamp'] }}</p>  
+            
+            <!-- View details button, specific to this entry -->
+            <a href="{{ url_for('article_details', entry_id=entry['id']) }}" class="button">View Details</a>
+        </div>
+    {% endfor %}
+    {% if not entries %}
+        <p>No articles saved yet.</p>
+    {% endif %}
+{% endblock %}
+
